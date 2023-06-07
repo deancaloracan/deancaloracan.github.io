@@ -11,7 +11,7 @@ interface CardProps {
 const Card: FC<CardProps> = ({ imageSrc, title, subtitle, link }) => {
   return (
     <a href={link !== '#' ? link : undefined} target="_blank" rel="noopener noreferrer">
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-80 md:w-96 mx-auto">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-90 mx-auto">
         <div className="relative">
           <img src={imageSrc} alt={title} className="h-48 w-full object-cover" />
           {link !== '#' && (

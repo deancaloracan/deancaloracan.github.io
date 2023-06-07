@@ -18,52 +18,50 @@ import { TbBrandNextjs, TbBrandOffice, TbBrandTailwind } from 'react-icons/tb';
 export default function Home() {
   return (
     <main className='bg-white px-10 text-black'>
-     <section className='min-h-screen'>
-      <nav className='py-10 mb-12 flex justify-between'>
-        <h1 className='text-lg font-bold'>dean</h1>
-        <ul className='flex items-center'>
-          <li>
-            <BsFillMoonStarsFill />
-          </li>
-          <li>
-            <a className='bg-gradient-to-r from-orange-400 to-rose-400 text-white px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1uiPkICXh5K2d4reRxGUmKoZleeCS0_L8' target="_blank">
-            Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-      <div className='text-center p-10'>
-        <h2 className='text-5xl py-2 font-bold text-orange-400'>Deanna Jeanne Caloracan</h2>
-        <h3 className='text-2xl py-2'>Computer Engineer</h3>
-        <p className='text-md py-5 leading-8 text-gray-800'>
-          Lagi&apos;t lagi para sa Pilipino.
-        </p>
-      
-      <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 hover:font-bold'>
-      <a href="https://www.linkedin.com/in/deancaloracan/">
-        <AiFillLinkedin />
+    <section className='min-h-screen'>
+  <nav className='py-10 mb-12 flex justify-between'>
+    <h1 className='text-lg font-bold'>dean</h1>
+    <ul className='flex items-center'>
+      {/* <li>
+        <BsFillMoonStarsFill />
+      </li> */}
+      <li>
+        <a className='bg-gradient-to-r from-orange-400 to-rose-400 text-white px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1uiPkICXh5K2d4reRxGUmKoZleeCS0_L8' target="_blank">
+          Resume
         </a>
-      <a href="https://github.com/deancaloracan">
-        <AiFillGithub />
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <div className='text-center p-10'>
+      {/* <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
+        <Image src={dean} alt="deancaloracan"/>
+      </div> */}
+      <h2 className='text-5xl py-2 font-bold text-orange-400'>Deanna Jeanne Caloracan</h2>
+      <h3 className='text-2xl py-2'>Computer Engineer</h3>
+      <p className='text-md py-5 leading-8 text-gray-800'>
+        Lagi&apos;t lagi para sa Pilipino.
+      </p>
+
+      <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 hover:font-bold'>
+        <a href="https://www.linkedin.com/in/deancaloracan/">
+          <AiFillLinkedin />
+        </a>
+        <a href="https://github.com/deancaloracan">
+          <AiFillGithub />
         </a>
         <a href="viber://add?number=639279530040">
-        <FaViber />
+          <FaViber />
         </a>
         <a href="mailto:dean.caloracan@gmail.com">
-        <SiGmail />
+          <SiGmail />
         </a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={dean} alt="deancaloracan"/>
-            </div>
-      </div>
-      </div>
-     </section>
-
-
-     <section className='p-10 bg-gradient-to-r from-orange-400 to-rose-400'>
+     <section className='mb-5 mx-0 p-5 bg-gradient-to-r from-orange-400 to-rose-400 rounded-lg'>
 
           <div>
             <h3 className="text-3xl py-1 dark:text-white font-bold">Services I can offer</h3>
@@ -77,7 +75,7 @@ export default function Home() {
 
             <section className='py-4'>
         <h3 className="text-3xl py-1 dark:text-white font-bold">Tools I Know and Use</h3>
-        <div className="grid grid-cols-2 gap-4 dark:text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 dark:text-white">
           <div>
             <h3 className="text-xl py-1 dark:text-white font-bold" >Data Visualization and BI tools</h3>
             <ul>
@@ -208,37 +206,38 @@ export default function Home() {
           <Card
         imageSrc="/chemistry.svg"
         title="UP Kapnayan"
-        subtitle="Card Subtitle"
+        subtitle="Remote instructional materials made and design from the assessed study habits of students of in Quezon City Polytechnic University."
         link="#"
       />
           <Card
         imageSrc="/cc.jpg"
         title="Coding Challenge"
-        subtitle="Card Subtitle"
+        subtitle="Competition made for IT freshmen, which is designed to showcase their critical thinking and programming skills."
         link="#"
       />
       <Card
         imageSrc="/dapo.jpg"
         title="Project DAPO"
-        subtitle="Card Subtitle"
+        subtitle="Project DAPO(Data Analytics on Pathological Outbreaks) is a project for the community to crowd-source data about mosquito hotspots.
+        "
         link="https://apkcombo.com/dapo-data-analytics-on-patho/com.vlct.dapo_app/"
       />
       <Card
         imageSrc="/enroll.jpg"
         title="Stack Enroll"
-        subtitle="Card Subtitle"
+        subtitle="Enrollment App for Xavier School Nuvali"
         link="https://enroll.xsn.edu.ph/"
       />
       <Card
         imageSrc="/ids.jpg"
         title="Stack ID System"
-        subtitle="Card Subtitle"
+        subtitle="MVP designed for Xavier School San Juan"
         link="#"
       />
       <Card
         imageSrc="/gradebook.jpg"
         title="Stack Gradebook"
-        subtitle="Card Subtitle"
+        subtitle="Gradebook System for Xavier School Nuvali"
         link="https://gradebook.xsn.edu.ph"
       />
             </div>
@@ -249,13 +248,15 @@ export default function Home() {
       <Card
         imageSrc="/ireach.jpg"
         title="iReach"
-        subtitle="Card Subtitle"
+        subtitle="Repository system for PUP College of Engineering Scholarly Studies."
         link="https://institutional-repository-8251c.web.app/"
       />
       <Card
         imageSrc="/deetz.jpg"
         title="Deetz"
-        subtitle="Card Subtitle"
+        subtitle="A one-stop platform with event planning
+        software features and a marketplace to facilitate the bridging
+        of suitable vendors."
         link="https://www.deetz.events/"
       />
             </div>
