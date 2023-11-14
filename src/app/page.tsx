@@ -26,7 +26,7 @@ export default function Home() {
         <BsFillMoonStarsFill />
       </li> */}
       <li>
-        <a className='bg-gradient-to-r from-orange-400 to-rose-400 text-white px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1uiPkICXh5K2d4reRxGUmKoZleeCS0_L8' target="_blank">
+        <a className='bg-gradient-to-r from-orange-400 to-rose-400 text-white px-4 py-2 rounded-md ml-8' href='https://docs.google.com/document/d/156AW45tCniP9ufCjYlAanUj-QxJKIcCjo4wDo7DyZJM/edit?usp=sharing' target="_blank">
           Resume
         </a>
       </li>
